@@ -1,0 +1,11 @@
+{
+  "name": "craft-provenance",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "保存桦树皮工艺作品的制作者、材料来源、文化授权和流通凭证。",
+  "scripts": {
+    "check": "node src/service.js --check",
+    "test": "node --test"
+  }
+}

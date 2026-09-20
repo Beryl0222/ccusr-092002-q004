@@ -1,0 +1,17 @@
+{
+  "service": "craft-provenance",
+  "source_context": "http://ent.people.com.cn/n1/2026/0917/c1012-40800223.html",
+  "sample": {
+    "craft_id": "BRK-2026-118",
+    "makers": [
+      {
+        "id": "artisan-07",
+        "share": 1.0
+      }
+    ],
+    "permissions": {
+      "display": true,
+      "commercial_reproduction": false
+    }
+  }
+}
