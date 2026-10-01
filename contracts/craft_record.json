@@ -6,12 +6,46 @@
     "makers": [
       {
         "id": "artisan-07",
-        "share": 1.0
+        "share": 0.6
+      },
+      {
+        "id": "artisan-12",
+        "share": 0.4
       }
     ],
     "permissions": {
       "display": true,
       "commercial_reproduction": false
+    },
+    "material_lots": [
+      {
+        "record_id": "HV-2026-0901",
+        "amount_g": 320,
+        "scrap_g": 40,
+        "incorporated_g": 280,
+        "compliance": "合规",
+        "rule_version_at_harvest": 3,
+        "recovery": "completed"
+      }
+    ],
+    "scrap_recycled": [
+      {
+        "scrap_id": "SCR-BRK-2026-118-HV-2026-0901",
+        "into_craft_id": "BRK-2026-120",
+        "weight_g": 25
+      }
+    ],
+    "returns": [],
+    "public_verification": {
+      "craft_id": "BRK-2026-118",
+      "verdict": "来源合规",
+      "batch_count": 1,
+      "material_mass_g": 280,
+      "sourced_in_forest_count": 1,
+      "harvest_window": "2026-09-01",
+      "rule_versions_at_harvest": [3],
+      "recovery_completed": true
     }
-  }
+  },
+  "privacy_note": "公开验真只返回来源结论与粗粒度信息（批次数量、总重量、林地区块数、采集时间窗、当日规则版本）；不返回网格编号、林地内部编号、证照号、许可号或精确坐标。采材端上传的精确坐标在入库前量化为模糊网格。"
 }
