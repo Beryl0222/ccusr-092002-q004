@@ -13,5 +13,73 @@
       "display": true,
       "commercial_reproduction": false
     }
+  },
+  "domain_samples": {
+    "forestland_rules": {
+      "forestland_id": "FL-A",
+      "current_version": 1,
+      "rules": {
+        "season": { "start": "05-01", "end": "09-30" },
+        "min_tree_age_years": 15,
+        "per_tree_limit_kg": 3,
+        "recovery": {
+          "observe_days": 30,
+          "required_checks": ["cambium_intact", "photo_followup"]
+        }
+      }
+    },
+    "permit": {
+      "permit_id": "P-1",
+      "forestland_id": "FL-A",
+      "team_id": "team-1",
+      "total_quota_kg": 50,
+      "allocated_quota_kg": 12,
+      "remaining_quota_kg": 38,
+      "valid_from": "2026-05-01",
+      "valid_to": "2026-09-30",
+      "rule_version": 1,
+      "required_credentials": ["forest_pass"],
+      "closed": false
+    },
+    "harvest_record": {
+      "record_id": "R-1",
+      "permit_id": "P-1",
+      "forestland_id": "FL-A",
+      "team_id": "team-1",
+      "rule_version": 1,
+      "collected_on": "2026-06-10",
+      "location_grid": "G2@49.198,126.247",
+      "tree_id": "T-1",
+      "weight_kg": 2,
+      "used_kg": 2,
+      "returned_kg": 0,
+      "available_kg": 0,
+      "status": "released",
+      "violations": [],
+      "recovery_task_id": "rec-R-1"
+    },
+    "material_batch": {
+      "batch_id": "B-1",
+      "workshop_id": "ws-1",
+      "craft_id": "BRK-2026-118",
+      "lines": [{ "record_id": "R-1", "kg": 2 }],
+      "product_kg": 1.6,
+      "scrap_kg": 0.4,
+      "recycled_kg": 0
+    },
+    "public_verification": {
+      "craft_id": "BRK-2026-118",
+      "verdict": "COMPLIANT",
+      "source_summary": {
+        "forestland_count": 1,
+        "source_years": ["2026"],
+        "rule_versions": [1],
+        "sourced_materials_kg": 2,
+        "distinct_records": 1
+      },
+      "makers": [{ "maker_id": "artisan-07", "share": 1 }],
+      "batches": 1
+    },
+    "privacy_note": "公开验真不含坐标、格网、树号、许可编号与采集队；定位仅以约 2 公里格网在管理端留存。"
   }
 }
